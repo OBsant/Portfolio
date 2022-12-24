@@ -5,7 +5,7 @@
 Este é um projeto de portfólio que fiz em meus estudos usando a API do Github para puxar os ultimos projetos postados em meu perfil
 
 <h2>Acessar projeto:</h2>
-<a href>Portfólio</a>
+<a href="https://obsant.github.io/Portfolio/">Portfólio</a>
 
 <h2>Tecnologias usadas:</h2>
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"></img>
