@@ -1,0 +1,24 @@
+.tecnology
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+
+    .logos
+        width: 6rem
+        background: #515052
+        margin-bottom: 1rem
+        padding: 1rem
+        border-radius: 1rem
+
+        @include low-resolution
+            width: 4.5rem
+            padding: .6rem
+
+        @include tablet
+            width: 4rem
+            padding: .5rem
+
+        @include mobile
+            width: 4rem
+            padding: .5rem

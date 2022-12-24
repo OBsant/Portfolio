@@ -1,0 +1,72 @@
+.container
+    background-color: #333138
+    padding: 2rem
+    color: $font-color
+    text-align: justify
+    font-family: $font
+
+    &-about
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: $padding
+
+        @include desktop-low
+            padding: 2rem 10rem 2rem 7rem
+
+        @include low-resolution
+            padding: 1rem 10rem 1rem 10rem
+
+        @include tablet
+            padding: 0.3rem
+
+        @include tablet
+            padding: 10px
+            flex-direction: column
+
+        @include mobile
+            padding: 5px
+            flex-direction: column
+
+        .pic
+            width: 25rem
+            border-radius: 50%
+            border: solid 3px #FF312E
+
+            @include low-resolution
+                width: 18rem
+
+            @include tablet
+                width: 15rem
+
+            @include mobile
+                width: 12.5rem
+
+        &-elements
+            @include display
+            flex-direction: column
+
+            @include desktop-low
+                padding-left: 3rem
+
+            .about
+                width: 40rem
+                margin-bottom: 1rem
+
+                @include low-resolution
+                    width: 30rem
+
+                @include tablet
+                    width: 25rem
+                    padding-top: 15px
+
+                @include mobile
+                    width: 20rem
+
+            .technologies
+                @include display
+                gap: 1.5rem
+                padding-top: 1rem
+
+                @include mobile
+                    gap: 1rem

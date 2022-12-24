@@ -1,0 +1,21 @@
+.navbar
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-direction: row
+    background-color: #1A191E
+    padding: 1rem 2rem 1rem 2rem
+    font-family: $font
+
+    @include low-resolution
+        padding: 1rem 8rem 1rem 8rem
+
+    @include tablet
+        padding: 1rem 3rem 1rem 3rem
+
+    @include mobile
+        flex-direction: column
+
+    .links
+        display: flex
+        gap: 1rem

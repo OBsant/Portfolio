@@ -1,0 +1,21 @@
+.container-contacts
+    background-color: #333138
+    padding: 2rem
+    font-family: $font
+
+    &-links
+        padding: $padding
+        @include display
+        gap: 1.5rem
+
+        @include mobile
+            padding: 1rem
+
+    .icon
+        font-size: 5rem
+
+    .card-contact
+        @include display
+        flex-direction: column
+        border-radius: 10px
+        padding: 1.5rem

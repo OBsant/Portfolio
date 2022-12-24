@@ -1,0 +1,39 @@
+.container-proj
+    background-color: #1A191E
+    padding: 2rem
+    text-align: justify
+    font-family: $font
+
+    @include tablet
+        text-align: center
+
+    @include mobile
+        padding: 2rem
+        text-align: start
+
+    &-projects
+        padding: $padding
+        @include display
+        flex-direction: column
+
+        @include tablet
+            padding: 3rem
+            flex-direction: row
+            padding: 0rem
+
+        @include mobile
+            padding: 3rem
+            flex-direction: row
+            padding: 0rem
+
+        .project
+            display: flex
+            flex-direction: row
+
+            @include tablet
+                flex-direction: column
+                padding-bottom: 2rem
+
+            @include mobile
+                flex-direction: column
+                padding-bottom: 2rem

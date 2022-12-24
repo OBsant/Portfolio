@@ -1,0 +1,22 @@
+
+.perfil-container
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url($background)
+    height: 95vh
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    font-family: $font
+    @include display
+    flex-direction: column
+
+    @include mobile
+        height: 90vh
+
+    .title-big
+        font-size: 5rem
+
+        @include mobile
+            font-size: 3rem
+
+        @include low-resolution
+            font-size: 3.5rem
