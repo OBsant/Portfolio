@@ -2,7 +2,7 @@
 
 <h2>Descrição:</h2>
 
-Este é um projeto de portfólio que fiz em meus estudos usando a API do Github para puxar os ultimos projetos postados em meu perfil
+Este é um projeto de portfólio que fiz em meus estudos de react, usei a API do Github para puxar os ultimos projetos postados em meu perfil e exibir eles na aplicação
 
 <h2>Acessar projeto:</h2>
 <a href="https://obsant.github.io/Portfolio/">Portfólio</a>
