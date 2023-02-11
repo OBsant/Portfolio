@@ -2,7 +2,7 @@
 
 <h2>Descrição:</h2>
 
-Este é um projeto de portfólio que fiz em meus estudos de react, usei a API do Github para puxar os ultimos projetos postados em meu perfil e exibir eles na aplicação
+Este é meu portfólio online, onde você pode encontrar uma visão geral dos meus projetos e habilidades, nele usei a API do Github para puxar os ultimos projetos postados em meu perfil e exibir eles na aplicação de forma dinamica. Aqui, você pode ver exemplos de meus trabalhos mais recentes, incluindo aplicativos desenvolvidos com React e outras tecnologias front-end. Se você é um recrutador procurando uma equipe de desenvolvimento talentosa, ou simplesmente curioso sobre meu trabalho, este é o lugar para começar!
 
 <h2>Acessar projeto:</h2>
 <a href="https://obsant.github.io/Portfolio/">Portfólio</a>
