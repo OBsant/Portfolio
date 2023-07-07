@@ -24,6 +24,8 @@ export const Cards = ({ project }) => {
 
   if (repoObj.title[project] === "LandingPage") {
     name = "landing-page";
+  } else if (repoObj.title[project] === "Portfolio") {
+    name = "portfolio";
   }
 
   let div;
