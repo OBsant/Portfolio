@@ -1,22 +1,74 @@
+@keyframes #{$animation}
+    0%
+        background-position: 0% 50%
+
+    50%
+        background-position: 50% 100%
+
+    100%
+        background-position: 0% 50%
 
 .perfil-container
-    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url($background)
+    background: linear-gradient(120deg, #302833, #2F2A36, #201f25, #2A2B36, #282C33)
+    animation: #{$animation} 15s ease infinite
     height: 95vh
     background-repeat: no-repeat
-    background-size: cover
-    background-position: center
+    background-size: 300% 300%
     font-family: $font
     @include display
-    flex-direction: column
 
     @include mobile
         height: 90vh
 
-    .title-big
-        font-size: 5rem
+    .fonts
+        color: white
+        @include display
+        gap: 50px
 
         @include mobile
-            font-size: 3rem
+            flex-direction: column
 
-        @include low-resolution
-            font-size: 3.5rem
+        &-edit
+
+            @include low-resolution
+                display: flex
+                flex-direction: column
+                text-align: left
+                gap: 25px
+
+            @include mobile-small
+                gap: 35px
+
+        .lottie
+            width: 30rem
+
+            @include low-resolution
+                font-size: 1.5rem
+
+            @include mobile
+                font-size: 1rem
+
+            @include mobile-ultra-small
+                width: 20rem
+
+        .title-small
+            font-size: 3rem
+            margin-bottom: -3rem
+
+            @include low-resolution
+                font-size: 1.5rem
+
+            @include mobile
+                font-size: 1.2rem
+
+        .title-big
+            font-size: 5rem
+
+            @include low-resolution
+                font-size: 2.5rem
+
+            @include mobile
+                font-size: 2rem
+
+            @include mobile-ultra-small
+                font-size: 1.5rem

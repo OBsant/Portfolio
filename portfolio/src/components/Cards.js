@@ -20,18 +20,31 @@ export const Cards = ({ project }) => {
     link: decrescente.map((repository) => repository.html_url),
   };
 
-  console.log(repoObj.title[5]);
+  let name = repoObj.title[project];
+
+  if (repoObj.title[project] === "LandingPage") {
+    name = "landing-page";
+  }
 
   let div;
 
   if (repoObj.description[project] !== null) {
     div = (
       <div className="card">
-        <h2>{repoObj.title[project]}</h2>
-        <p>{repoObj.description[project]}</p>
-        <a href={repoObj.link[project]} target="blank">
-          Ver Projeto
-        </a>
+        <img
+          src={`https://raw.githubusercontent.com/OBsant/${repoObj.title[project]}/master/${name}/public/${repoObj.title[project]}.png`}
+          alt="img"
+          className="imgProject"
+        />
+        <div className="infoProject">
+          <h2>{repoObj.title[project]}</h2>
+          <p>{repoObj.description[project]}</p>
+          <div className="buttons">
+            <a href={repoObj.link[project]} target="blank">
+              Ver Projeto
+            </a>
+          </div>
+        </div>
       </div>
     );
   }

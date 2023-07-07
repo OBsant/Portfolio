@@ -69,10 +69,24 @@
                 @include mobile
                     width: 20rem
 
+                @include mobile-ultra-small
+                    padding: 1rem
+
             .technologies
                 @include display
                 gap: 1.5rem
-                padding-top: 1rem
+
+                .stack1, .stack2
+                    @include display
+                    gap: 1.5rem
+                    padding-top: 1rem
+
+                    @include mobile-small
+                        gap: 2rem
+                        justify-content: center
 
                 @include mobile
                     gap: 1rem
+
+                @include mobile-small
+                    flex-direction: column

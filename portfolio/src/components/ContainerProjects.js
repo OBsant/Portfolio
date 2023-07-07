@@ -14,17 +14,10 @@ export const ContainerProjects = () => {
     <div className="container-proj" id="container-proj">
       <div data-aos="zoom-in">
         <Titles title="Projetos" />
-        <div className="container-proj-projects">
-          <div className="project">
-            <Cards project={0} />
-            <Cards project={1} />
-            <Cards project={2} />
-          </div>
-          <div className="project">
-            <Cards project={3} />
-            <Cards project={4} />
-            <Cards project={5} />
-          </div>
+        <div className="project">
+          <Cards project={0} />
+          <Cards project={1} />
+          <Cards project={2} />
         </div>
       </div>
     </div>

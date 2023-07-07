@@ -11,29 +11,24 @@
         padding: 2rem
         text-align: center
 
-    &-projects
+    @include mobile-small
+        padding: 0rem
+
+    .project
+        display: flex
+        flex-direction: row
         padding: $padding
         @include display
-        flex-direction: column
+
+        @include low-resolution
+            flex-direction: column
 
         @include tablet
-            padding: 3rem
-            flex-direction: row
-            padding: 0rem
+            padding-bottom: 2rem
 
         @include mobile
-            padding: 3rem
             flex-direction: column
+            padding-bottom: 2rem
+
+        @include mobile-small
             padding: 0rem
-
-        .project
-            display: flex
-            flex-direction: row
-
-            @include tablet
-                flex-direction: column
-                padding-bottom: 2rem
-
-            @include mobile
-                flex-direction: column
-                padding-bottom: 2rem

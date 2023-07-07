@@ -3,10 +3,6 @@
     justify-content: center
     align-items: center
 
-@mixin mobile
-    @media (max-width: 580px)
-        @content
-
 @mixin desktop-low
     @media (max-width: 1697px)
         @content
@@ -16,5 +12,17 @@
         @content
 
 @mixin tablet
-    @media (max-width: 1057px)
+    @media (max-width: 1160px)
+        @content
+
+@mixin mobile
+    @media (max-width: 831px)
+        @content
+
+@mixin mobile-small
+    @media (max-width: 576px)
+        @content
+
+@mixin mobile-ultra-small
+    @media (max-width: 484px)
         @content
