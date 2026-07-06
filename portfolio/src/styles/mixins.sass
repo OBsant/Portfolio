@@ -3,6 +3,19 @@
     justify-content: center
     align-items: center
 
+@mixin glass-card
+    background: rgba(255, 255, 255, 0.03)
+    backdrop-filter: blur(12px)
+    -webkit-backdrop-filter: blur(12px)
+    border: 1px solid $border-subtle
+    box-shadow: $shadow-soft
+
+@mixin hover-lift
+    transition: transform 0.3s ease, box-shadow 0.3s ease
+    &:hover
+        transform: translateY(-6px)
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.45)
+
 @mixin desktop-low
     @media (max-width: 1697px)
         @content

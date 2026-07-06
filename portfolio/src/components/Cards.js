@@ -30,7 +30,13 @@ export const Cards = ({ project }) => {
 
   let div;
 
-  if (repoObj.description[project] !== null) {
+  if (!repositories.length) {
+    div = (
+      <div className="card">
+        <p className="loading-placeholder">Carregando projeto...</p>
+      </div>
+    );
+  } else if (repoObj.description[project] !== null) {
     div = (
       <div className="card">
         <img
@@ -43,7 +49,7 @@ export const Cards = ({ project }) => {
           <p>{repoObj.description[project]}</p>
           <div className="buttons">
             <a href={repoObj.link[project]} target="blank">
-              Ver Projeto
+              Ver Projeto →
             </a>
           </div>
         </div>

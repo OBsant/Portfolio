@@ -14,7 +14,7 @@
     height: 95vh
     background-repeat: no-repeat
     background-size: 300% 300%
-    font-family: $font
+    font-family: $font-heading
     @include display
 
     @include mobile
@@ -63,6 +63,10 @@
 
         .title-big
             font-size: 5rem
+            background: $accent-gradient
+            background-clip: text
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
 
             @include low-resolution
                 font-size: 2.5rem
@@ -72,3 +76,36 @@
 
             @include mobile-ultra-small
                 font-size: 1.5rem
+
+        .cta-buttons
+            display: flex
+            gap: 1.25rem
+            margin-top: 2rem
+
+            @include low-resolution
+                justify-content: flex-start
+
+            @include mobile
+                justify-content: center
+                flex-wrap: wrap
+
+            a
+                font-family: $font-body
+                font-size: 1rem
+
+            .cta-primary
+                background: $accent-gradient
+                color: $font-color
+
+                &:hover
+                    filter: brightness(1.1)
+                    transform: translateY(-3px)
+
+            .cta-secondary
+                background: transparent
+                border: 1.5px solid $border-subtle
+                color: $font-color
+
+                &:hover
+                    background: rgba(255, 255, 255, 0.06)
+                    transform: translateY(-3px)

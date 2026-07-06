@@ -1,9 +1,13 @@
 .container
-    background-color: #333138
+    background-color: $bg-card
     padding: 2rem
     color: $font-color
     text-align: justify
-    font-family: $font
+    font-family: $font-body
+
+    h2
+        font-family: $font-heading
+        text-align: center
 
     &-about
         display: flex
@@ -32,7 +36,12 @@
         .pic
             width: 25rem
             border-radius: 50%
-            border: solid 3px #FF312E
+            padding: 6px
+            background: $accent-gradient
+            transition: transform 0.3s ease
+
+            &:hover
+                transform: scale(1.03)
 
             @include low-resolution
                 width: 18rem
@@ -58,6 +67,10 @@
             .about
                 width: 40rem
                 margin-bottom: 1rem
+                padding: 1.25rem 1.5rem
+                border-left: 3px solid #FF7A45
+                background: rgba(255, 255, 255, 0.03)
+                border-radius: 0 0.75rem 0.75rem 0
 
                 @include low-resolution
                     width: 30rem
@@ -73,20 +86,14 @@
                     padding: 1rem
 
             .technologies
-                @include display
+                display: flex
+                flex-wrap: wrap
+                justify-content: center
                 gap: 1.5rem
-
-                .stack1, .stack2
-                    @include display
-                    gap: 1.5rem
-                    padding-top: 1rem
-
-                    @include mobile-small
-                        gap: 2rem
-                        justify-content: center
+                padding-top: 1rem
 
                 @include mobile
                     gap: 1rem
 
                 @include mobile-small
-                    flex-direction: column
+                    gap: 1.25rem

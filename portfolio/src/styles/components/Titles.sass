@@ -1,6 +1,21 @@
 h1
     text-align: center
     color: $font-color
+    font-family: $font-heading
+    position: relative
+    padding-bottom: 1rem
+    margin-bottom: 1rem
+
+    &::after
+        content: ""
+        position: absolute
+        bottom: 0
+        left: 50%
+        transform: translateX(-50%)
+        width: 4rem
+        height: 3px
+        background: $accent-gradient
+        border-radius: 2px
 
     @include mobile
         font-size: 1.5rem

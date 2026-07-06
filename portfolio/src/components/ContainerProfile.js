@@ -9,7 +9,15 @@ export const ContainerProfile = () => {
       <div className="fonts">
         <div className="fonts-edit">
           <h4 className="title-small">Olá, sou Ocivaldo Bruno</h4>
-          <h1 className="title-big">Desenvolvedor Front-End</h1>
+          <h1 className="title-big">Desenvolvedor Outsystems</h1>
+          <div className="cta-buttons">
+            <a href="#container-proj" className="cta-primary">
+              Ver Projetos
+            </a>
+            <a href="#container-contacts" className="cta-secondary">
+              Contato
+            </a>
+          </div>
         </div>
         <Lottie animationData={animation} loop={true} className="lottie" />
       </div>

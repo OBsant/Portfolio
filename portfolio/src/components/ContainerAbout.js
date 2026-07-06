@@ -11,6 +11,9 @@ import js from "../img/js.png";
 import react from "../img/reactIcon.png";
 import sass from "../img/sass.png";
 import ts from "../img/typescript.png";
+import outsystems from "../img/outsystems.png";
+import cshap from "../img/csharp.png";
+import sql from "../img/sql.png";
 import { Technologies } from "./Technologies";
 
 export const ContainerAbout = () => {
@@ -27,26 +30,24 @@ export const ContainerAbout = () => {
           <div className="container-about-elements">
             <div className="about">
               <p>
-                Olá, pode me chamar apenas de Bruno, Sou um programador
-                Front-End com experiência em JavaScript, TypeScript, HTML e CSS.
-                Tenho habilidades no desenvolvimento de aplicações web usando
-                React.js para projetos pessoais e acadêmicos. Procuro novas
-                oportunidades para expandir minhas habilidades e contribuir em
-                projetos desafiadores.
+                Desenvolvedor OutSystems com mais de 2 anos de experiência combinada em OutSystems 11 e OutSystems Developer Cloud (ODC). 
+                Atuou no desenvolvimento de aplicações corporativas web e mobile, do levantamento de requisitos ao deploy em produção, 
+                incluindo integrações via REST e SOAP APIs e sustentação técnica. Conhecimento complementar em JavaScript, TypeScript, 
+                Python, React.js, Next.js, C# e SQL. Perfil autônomo, com facilidade de adaptação a novos ambientes e times, e foco em 
+                entregar soluções alinhadas aos objetivos do negócio. 
               </p>
             </div>
             <h2>Tecnologias que domino:</h2>
             <div className="technologies">
-              <div className="stack1">
-                <Technologies logo={react} tech="ReactJS" />
-                <Technologies logo={ts} tech="TypeScript" />
-                <Technologies logo={js} tech="JavaScript" />
-              </div>
-              <div className="stack2">
-                <Technologies logo={sass} tech="SASS" />
-                <Technologies logo={css} tech="CSS" />
-                <Technologies logo={html} tech="HTML" />
-              </div>
+              <Technologies logo={outsystems} tech="OutSystems" />
+              <Technologies logo={cshap} tech="C#" />
+              <Technologies logo={react} tech="ReactJS" />
+              <Technologies logo={ts} tech="TypeScript" />
+              <Technologies logo={js} tech="JavaScript" />
+              <Technologies logo={sass} tech="SASS" />
+              <Technologies logo={css} tech="CSS" />
+              <Technologies logo={html} tech="HTML" />
+              <Technologies logo={sql} tech="SQL" />
             </div>
           </div>
         </div>
